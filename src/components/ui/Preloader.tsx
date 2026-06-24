@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
+import logoFull from '/kn-logo-full.svg?url';
 
 export function Preloader() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,34 +27,15 @@ export function Preloader() {
           transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
           className="fixed inset-0 z-[10000] flex flex-col items-center justify-center bg-background"
         >
-          {/* Logo Animation */}
-          <div className="relative w-24 h-24 mb-8">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <defs>
-                <linearGradient id="loader-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#060935" />
-                  <stop offset="50%" stopColor="#2a3aa0" />
-                  <stop offset="100%" stopColor="#3a52c4" />
-                </linearGradient>
-              </defs>
-              <motion.path
-                d="M 50 0 C 50 40, 60 50, 100 50 C 60 50, 50 60, 50 100 C 50 60, 40 50, 0 50 C 40 50, 50 40, 50 0 Z"
-                fill="transparent"
-                stroke="url(#loader-grad)"
-                strokeWidth="2"
-                initial={{ pathLength: 0 }}
-                animate={{ pathLength: 1 }}
-                transition={{ duration: 1.5, ease: "easeInOut" }}
-              />
-              <motion.path
-                d="M 50 0 C 50 40, 60 50, 100 50 C 60 50, 50 60, 50 100 C 50 60, 40 50, 0 50 C 40 50, 50 40, 50 0 Z"
-                fill="url(#loader-grad)"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 1.5 }}
-              />
-            </svg>
-          </div>
+          {/* Logo */}
+          <motion.img
+            src={logoFull}
+            alt="kn. — Nguyễn Kỳ Nam"
+            className="w-56 md:w-64 h-auto mb-8"
+            initial={{ opacity: 0, scale: 0.92 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          />
 
           {/* Progress Number */}
           <motion.div className="font-display text-4xl text-foreground">

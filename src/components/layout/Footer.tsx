@@ -1,6 +1,7 @@
 import { Mail } from 'lucide-react';
 import { SiFacebook, SiInstagram, SiTiktok, SiGithub, SiSpotify } from 'react-icons/si';
 import { Link } from 'react-router-dom';
+import logoUrl from '/kn-logo.svg?url';
 
 const socials = [
   { label: 'Facebook', href: 'https://www.facebook.com/nguyen.ky.nam.461926/', Icon: SiFacebook },
@@ -15,7 +16,7 @@ export function Footer() {
     <footer className="relative py-16 px-6 bg-background z-20 border-t border-white/10">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
         <div className="flex flex-col items-center md:items-start">
-          <div className="text-3xl tracking-tight text-foreground font-display mb-3">kn<span className="text-primary">.</span></div>
+          <img src={logoUrl} alt="kn. — Nguyễn Kỳ Nam" className="h-12 w-auto mb-4" />
           <p className="text-muted-foreground text-sm max-w-xs text-center md:text-left mb-5">
             Người trẻ kinh doanh thực chiến · Cần Thơ, Việt Nam.
           </p>

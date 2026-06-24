@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import logoUrl from '/kn-logo.png?url';
+import logoUrl from '/kn-logo.svg?url';
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Magnetic } from '../ui/Magnetic';
@@ -49,8 +49,7 @@ export function Navigation() {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className="flex items-center gap-3 cursor-pointer pointer-events-auto justify-self-start"
       >
-        <img src={logoUrl} alt="kn. logo" className="w-8 h-8 object-contain" />
-        <span className="text-white font-semibold text-xl tracking-tight font-display">kn.</span>
+        <img src={logoUrl} alt="kn. — Nguyễn Kỳ Nam" className="h-8 w-auto object-contain" />
       </motion.a>
 
       {/* Center: Links */}

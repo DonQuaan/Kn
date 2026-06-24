@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import logoUrl from '/kn-logo.svg?url';
 
 const ZALO = 'https://zalo.me/0789500902';
 
@@ -10,7 +11,7 @@ export function BottomNav() {
       transition={{ delay: 1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       className="fixed bottom-6 left-1/2 z-[60] flex md:hidden items-center gap-4 bg-black/60 border border-white/10 backdrop-blur-lg rounded-full p-2 shadow-2xl"
     >
-      <span className="font-display text-white text-2xl font-semibold pl-4 pr-2">kn.</span>
+      <img src={logoUrl} alt="kn." className="h-6 w-auto pl-3 pr-1" />
       <a
         href={ZALO}
         target="_blank"
