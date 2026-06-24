@@ -36,8 +36,10 @@ export default {
         white: "#060935",
       },
       fontFamily: {
-        display: ['"Instrument Serif"', "serif"],
-        body: ["Inter", "sans-serif"],
+        sans: ['"Be Vietnam Pro"', "sans-serif"],
+        display: ['"Playfair Display"', "serif"],
+        body: ['"Be Vietnam Pro"', "sans-serif"],
+        heading: ['"Anton"', "sans-serif"],
       },
       keyframes: {
         "fade-rise": {

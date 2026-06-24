@@ -14,7 +14,7 @@ export function Hero() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="self-start relative pb-4"
         >
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[9rem] font-sans font-black uppercase text-white tracking-tighter leading-[1.1] md:leading-[0.95]">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[9rem] font-heading uppercase text-white tracking-tight leading-[1.05] md:leading-[0.95]">
             Bắt đầu sớm,<br />đi thật xa.
           </h1>
         </motion.div>
