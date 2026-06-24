@@ -63,7 +63,6 @@ export function Navigation() {
           className="flex items-center gap-8 liquid-glass rounded-full px-8 py-3 pointer-events-auto border border-white/10"
         >
           <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="text-sm font-medium text-white/70 hover:text-white transition-colors">Giới thiệu</a>
-          <a href="#stats" onClick={(e) => handleNavClick(e, 'stats')} className="text-sm font-medium text-white/70 hover:text-white transition-colors">Dấu ấn</a>
           <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="text-sm font-medium text-white/70 hover:text-white transition-colors">Liên hệ</a>
         </motion.nav>
       </div>

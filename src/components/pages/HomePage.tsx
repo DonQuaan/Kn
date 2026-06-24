@@ -1,6 +1,5 @@
 import { Hero } from '../features/Hero';
 import { AboutSection } from '../sections/AboutSection';
-import { StatsSection } from '../sections/StatsSection';
 import { ContactSection } from '../sections/ContactSection';
 import { BottomNav } from '../layout/BottomNav';
 import { Navigation } from '../layout/Navigation';
@@ -17,7 +16,6 @@ export function HomePage() {
       <main id="main-content" tabIndex={-1}>
         <Hero />
         <AboutSection />
-        <StatsSection />
         <ContactSection />
       </main>
 
